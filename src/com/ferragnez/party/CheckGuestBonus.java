@@ -27,7 +27,7 @@ public class CheckGuestBonus {
             i++;
         }
 
-        // Alla fine del ciclo for guardo il valore della variabile found
+        // Alla fine del ciclo while guardo il valore della variabile found
         if (!found) {
             System.out.println("Eh, volevi! Non puoi entrare");
         } else {
