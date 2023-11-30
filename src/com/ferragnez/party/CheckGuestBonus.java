@@ -2,7 +2,7 @@ package com.ferragnez.party;
 
 import java.util.Scanner;
 
-public class CheckGuest {
+public class CheckGuestBonus {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -17,12 +17,14 @@ public class CheckGuest {
         boolean found = false;
 
         // Ciclo all'interno dell'array per controllare se il nome è presente
-        for (int i = 0; i < invitati.length; i++) {
+        int i = 0;
 
-            // Confronto il nome da cercare con l'elemento corrente
+        while (i < invitati.length) {
             if (userName.equalsIgnoreCase(invitati[i])) {
                 found = true;
+                break;
             }
+            i++;
         }
 
         // Alla fine del ciclo for guardo il valore della variabile found
